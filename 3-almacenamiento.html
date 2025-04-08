@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Almacenamiento de la información</h1>
+    <nav>
+        <a href="./index.html">Indice</a>
+        <a href="./1-seguridad.html">Seguridad y privacidad de la información</a>
+        <a href="./2-tratamiento.html">Tratamiento de la información</a>
+        <a href="./3-almacenamiento.html">Almacenamiento de la información</a>
+        <a href="./4-amenazas.html">Principales amenazas</a>
+        <a href="./5-contrasenas.html">Contraseñas</a>
+        <a href="./6-proteccion.html">Protección del puesto de trabajo</a>
+    </nav>
+
+    <h1>3. Almacenamiento de la Información</h1>
+
+    <h2>3.1. Copias de seguridad</h2>
+    <p><strong>Definición:</strong> Réplica de datos en otro soporte para recuperación ante pérdidas (fallos técnicos, ciberataques, desastres).</p>
+
+    <h3>Planificación:</h3>
+    <p><strong>¿Qué respaldar?</strong></p>
+    <ul>
+        <li>Priorizar datos críticos: financieros, de clientes, propiedad intelectual.</li>
+        <li>Considerar requisitos legales (ej: retención por regulaciones).</li>
+    </ul>
+
+    <h3>Frecuencia:</h3>
+    <p>Basarse en el RPO (tiempo máximo aceptable de pérdida de datos).</p>
+    <p><strong>Ejemplo:</strong> RPO de 4 horas → backups cada 4 horas.</p>
+
+    <h3>Tipos de backup:</h3>
+    <ul>
+        <li><strong>Completa:</strong> Copia total de los datos.
+            <ul>
+                <li>Ventaja: Restauración rápida.</li>
+                <li>Desventaja: Consume más tiempo y almacenamiento.</li>
+            </ul>
+        </li>
+        <li><strong>Incremental:</strong> Solo cambios desde el último backup (completo o incremental).
+            <ul>
+                <li>Ventaja: Ahorra espacio.</li>
+                <li>Desventaja: Restauración lenta (requiere cadena de copias).</li>
+            </ul>
+        </li>
+        <li><strong>Diferencial:</strong> Cambios desde la última copia completa.
+            <ul>
+                <li>Ventaja: Equilibrio entre espacio y facilidad de restauración.</li>
+            </ul>
+        </li>
+        <li><strong>Continua:</strong> Copia en tiempo real.
+            <ul>
+                <li>Ventaja: Ideal para servicios críticos (ej: finanzas, salud).</li>
+                <li>Desventaja: Costoso y complejo.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Almacenamiento:</h3>
+    <ul>
+        <li><strong>Discos:</strong> Rápido acceso, pero vulnerable a fallos físicos.</li>
+        <li><strong>Cintas:</strong> Económico para archivo a largo plazo, pero lento.</li>
+        <li><strong>Nube:</strong> Escalable y resistente a desastres, pero depende de internet.</li>
+        <li><strong>Híbrido:</strong> Combina local (rápido) y nube (seguro).</li>
+    </ul>
+
+    <h3>Gestión:</h3>
+    <p><strong>Regla 3-2-1:</strong></p>
+    <ul>
+        <li>3 copias totales.</li>
+        <li>2 medios diferentes (ej: disco + nube).</li>
+        <li>1 copia fuera del sitio (ej: nube o cinta en ubicación remota).</li>
+    </ul>
+
+    <h2>3.2. Borrado seguro de la información</h2>
+    <p><strong>Objetivo:</strong> Eliminar datos sensibles sin posibilidad de recuperación para proteger privacidad y cumplir normativas.</p>
+
+    <h3>Prácticas recomendadas:</h3>
+
+    <h4>Políticas claras:</h4>
+    <ul>
+        <li>Definir qué datos borrar, cuándo y cómo.</li>
+        <li>Auditorías periódicas y registros de eliminación.</li>
+    </ul>
+
+    <h4>Capacitación:</h4>
+    <ul>
+        <li>Formar empleados en procedimientos de borrado seguro.</li>
+    </ul>
+
+    <h4>Inventario de activos:</h4>
+    <ul>
+        <li>Mantener lista actualizada de dispositivos con datos (servidores, móviles, etc.).</li>
+    </ul>
+
+    <h4>Cifrado:</h4>
+    <ul>
+        <li>Si los datos están cifrados, eliminar las claves los hace inaccesibles.</li>
+    </ul>
+
+    <h4>Herramientas:</h4>
+    <ul>
+        <li>Software especializado (ej: DBAN, Blancco) que cumpla estándares (ej: DoD 5220.22-M).</li>
+    </ul>
+
+    <h4>Destrucción física:</h4>
+    <ul>
+        <li>Triturar o desmagnetizar dispositivos obsoletos (ej: discos duros).</li>
+    </ul>
+
+    <h4>Nube:</h4>
+    <ul>
+        <li>Seguir protocolos del proveedor para eliminar datos y copias residuales.</li>
+    </ul>
+
+    <h3>Importancia:</h3>
+    <p>Evita riesgos legales, financieros y reputacionales por filtraciones de datos "eliminados".</p>
+    
+</body>
+</html>
